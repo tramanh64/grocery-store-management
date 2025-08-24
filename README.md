@@ -1,28 +1,46 @@
-Grocery Store Management System
-A simple desktop application for managing grocery store inventory, built with C++ and the Qt Framework. The application uses an SQLite database to store and manage product data.
+# 🛒 Grocery Store Management System
 
-Features
-This application provides the following core functionalities for inventory management:
+> A simple and efficient desktop application for managing grocery store inventory, built with C++ and the Qt Framework. This project uses an SQLite database for robust data storage and management.
 
-Add: Add a new product type to the database (e.g., adding "Apples" as a new item).
+---
 
-Delete: Remove a product type permanently from the database.
+## ✨ Features
 
-Search: Find specific products in the inventory.
+This application provides a complete set of tools for effective inventory management:
 
-Import: Record incoming stock for products (Receiving goods).
+-   **➕ Add Product:** Add new product types to the database (e.g., adding "Apples" as a new item).
+-   **🗑️ Delete Product:** Permanently remove a product type from the database.
+-   **🔍 Search:** Quickly find specific products within the inventory.
+-   **📥 Import Stock:** Record incoming stock for products (Receiving goods).
+-   **📤 Export Stock:** Record outgoing stock or sales of products (Dispatching goods).
+-   **📊 Report:** Generate insightful reports based on the current inventory data.
 
-Export: Record outgoing stock or sales of products (Dispatching goods).
+---
 
-Report: Generate reports based on the inventory data.
+## 💻 Technologies Used
 
-How to Run the Project
+-   **C++**
+-   **Qt Framework** (for the user interface)
+-   **SQLite** (for the database)
+
+---
+
+## 🚀 Getting Started
+
 To get the project running on your local machine, follow these simple steps:
 
-Clone this repository to your local machine.
+1.  **Clone the repository** to your desired location.
+    ```bash
+    git clone [https://github.com/tramanh64/grocery-store-management.git](https://github.com/tramanh64/grocery-store-management.git)
+    ```
+2.  **Open the project** by launching the `.pro` file with Qt Creator.
+3.  **Build the project** (Qt Creator will handle the dependencies).
+4.  **Run the application** and start managing your inventory!
 
-Open the .pro file using Qt Creator.
+---
 
-Build the project (this will also handle dependencies).
+## 📸 Screenshot
 
-Run the application from within Qt Creator.
+Here's a look at the main application window:
+
+![Application Screenshot](https://github.com/user-attachments/assets/45a750c6-6287-4ab9-b729-63402886e8a4)
