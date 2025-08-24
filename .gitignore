@@ -1,0 +1,117 @@
+# ===================================================================
+
+# Nội dung file .gitignore cho dự án C++/Qt với SQLite
+
+# ===================================================================
+
+
+
+# 1. Thư mục Build
+
+# Qt Creator thường tạo ra các thư mục build như 'build-ProjectName-Desktop_Qt_6_5_0_MinGW_64_bit-Debug'
+
+# Dấu * sẽ khớp với tất cả các thư mục bắt đầu bằng 'build-'
+
+build-*/
+
+debug/
+
+release/
+
+
+
+# 2. File do Trình biên dịch tạo ra (Compiler-Generated Files)
+
+# Các file thực thi, thư viện và file đối tượng
+
+*.exe
+
+*.dll
+
+*.so
+
+*.dylib
+
+*.a
+
+*.o
+
+*.obj
+
+*.lib
+
+*.app
+
+
+
+# 3. File Cấu hình của Qt Creator (Qt Creator User-Specific Files)
+
+# Rất quan trọng! File này chứa cài đặt riêng của máy bạn và sẽ gây xung đột cho người khác.
+
+*.pro.user
+
+*.pro.user.*
+
+*.creator.user
+
+*.creator.user.*
+
+CMakeLists.txt.user
+
+
+
+# 4. File do Qt tự động tạo (Qt Auto-Generated Files)
+
+# File sinh ra từ Meta-Object Compiler, User Interface Compiler, và Resource Compiler
+
+moc_*.cpp
+
+ui_*.h
+
+qrc_*.cpp
+
+
+
+# 5. File Database SQLite
+
+# Quan trọng: Không nên đưa file database chứa dữ liệu thật lên Git.
+
+# Thay tên 'your_database_name.db' bằng tên file database thật của bạn.
+
+*.db
+
+*.sqlite
+
+*.sqlite3
+
+*.db-journal
+
+# Ví dụ cụ thể nếu database của bạn tên là 'grocery.db':
+
+# grocery.db
+
+
+
+# 6. File tạm và file hệ thống (Temporary and System Files)
+
+# File của hệ điều hành hoặc các trình soạn thảo
+
+.DS_Store
+
+Thumbs.db
+
+*.bak
+
+*~
+
+
+
+# 7. File của các hệ thống build khác (CMake, qmake)
+
+Makefile*
+
+CMakeCache.txt
+
+CMakeFiles/
+
+cmake_install.cmake
